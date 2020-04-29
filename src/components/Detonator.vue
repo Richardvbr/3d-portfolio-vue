@@ -12,7 +12,7 @@
           <router-link to="/">Home</router-link>
         </li>
         <li>
-          <router-link to="/about" class="active">About</router-link>
+          <router-link to="/about">About</router-link>
         </li>
         <li>
           <router-link to="/contact">Contact</router-link>
@@ -156,9 +156,79 @@ body,
   }
 }
 
-// Footer
+  // Footer
 .body-project {
   position: relative;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
+}
+// Tablet -- Portrait
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+
+    .logo img {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li a {
+      margin-left: 0rem;
+    }
+  }
+  // Projects
+  #project-content {
+    p {
+      max-width: 90%;
+      text-align: center;
+      margin: 0.3rem 0;
+    }
+
+    img {
+      width: 90vw;
+    }
+  }
+}
+// Smartphone -- Portrait
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+
+    .logo img {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li a {
+      margin-left: 0rem;
+    }
+  }
+
+  // Projects
+  #project-content {
+    h1 {
+      font-size: 2.25rem;
+    }
+
+    p {
+      max-width: 90%;
+      text-align: center;
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+    }
+
+    img {
+      width: 90vw;
+    }
+  }
 }
 </style>

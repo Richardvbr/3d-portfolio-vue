@@ -10,10 +10,10 @@
       </div>
       <ul>
         <li>
-          <router-link to="/" >Home</router-link>
+          <router-link to="/">Home</router-link>
         </li>
         <li>
-          <router-link to="/about" >About</router-link>
+          <router-link to="/about">About</router-link>
         </li>
         <li>
           <router-link to="/contact" class="active">Contact</router-link>
@@ -227,4 +227,86 @@ body,
     }
   }
 }
+
+// Tablet -- Portrait
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+
+    .logo img {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li a {
+      margin-left: 0rem;
+    }
+  }
+
+  // Contact
+  .body-contact {
+    #contact-content {
+      .form {
+        margin-top: 2rem;
+
+        h2 {
+          font-size: 4rem;
+        }
+      }
+      form {
+        width: 500px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// Tablet -- Landscape
+
+// Smartphone -- Portrait
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+
+    .logo img {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li a {
+      margin-left: 0rem;
+    }
+  }
+
+  // Contact
+  .body-contact {
+    #contact-content {
+      margin-top: 1rem;
+      overflow: hidden;
+      .form {
+        form {
+          width: 250px;
+          margin: auto;
+        }
+
+        h2 {
+          font-size: 3rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Smartphone -- Landscape
 </style>

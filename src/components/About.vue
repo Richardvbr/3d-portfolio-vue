@@ -277,4 +277,117 @@ body,
   position: relative;
   padding-bottom: 5rem;
 }
+
+// Tablet -- Portrait
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+
+    .logo img {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li a {
+      margin-left: 0rem;
+    }
+  }
+
+  // About
+  .body-about {
+    overflow: scroll;
+    min-height: 100%;
+  }
+
+  #about-content {
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+
+    .about-personal {
+      flex-direction: column;
+    }
+    img {
+      margin-top: 2rem;
+    }
+
+    .vertical-line {
+      display: none;
+    }
+
+    .email {
+      margin-bottom: 2rem;
+    }
+
+    .about-text {
+      padding: 0 5rem;
+      // Disable linebreaks with class="disable-mobile" to create
+      // mobile-friendly paragraphs
+      .disable-mobile {
+        display: none;
+      }
+      .disable-tablet {
+        display: none;
+      }
+    }
+  }
+}
+
+// Smartphone -- Portrait
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+
+    .logo img {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li a {
+      margin-left: 0rem;
+    }
+  }
+
+  // About
+  .body-about {
+    overflow: scroll;
+    height: 100%;
+  }
+
+  #about-content {
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+
+    .about-personal {
+      flex-direction: column;
+    }
+
+    .vertical-line {
+      display: none;
+    }
+
+    .email {
+      margin-bottom: 2rem;
+    }
+
+    .about-text {
+      // Disable linebreaks with class="disable-mobile" to create
+      // mobile-friendly paragraphs
+      .disable-mobile {
+        display: none;
+      }
+    }
+  }
+}
 </style>

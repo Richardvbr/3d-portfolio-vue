@@ -1,0 +1,204 @@
+// Tablet -- Portrait
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  // Grid Container
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+  
+    .logo img {
+      display: none;
+    }
+  
+    ul {
+      margin: 0;
+    }
+  
+      li a {
+        margin-left: 0rem;
+      }
+    }
+
+  // About
+  .body-about {
+    overflow: scroll;
+    min-height: 100%;
+  }
+
+  #about-content {
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+
+    .about-personal {
+      flex-direction: column;
+    }
+      img {
+        margin-top: 2rem;
+      }
+
+    .vertical-line {
+      display: none;
+    }
+
+    .email {
+      margin-bottom: 2rem;
+    }
+
+    .about-text {
+      padding: 0 5rem;
+      // Disable linebreaks with class="disable-mobile" to create
+      // mobile-friendly paragraphs
+      .disable-mobile {
+        display: none;
+      }
+      .disable-tablet {
+        display: none;
+      }
+    }
+  }
+
+  // Projects
+  #project-content {
+    p {
+      max-width: 90%;
+      text-align: center;
+      margin: 0.3rem 0;
+    }
+
+    img {
+      width: 90vw;
+    }
+  } 
+
+  // Contact
+  .body-contact {
+    #contact-content {
+      .form {
+        margin-top: 2rem;
+
+        h2 {
+          font-size: 4rem;
+        }
+      }
+        form {
+          width: 500px;
+          margin: auto;
+        }
+    }
+  }
+}
+
+// Tablet -- Landscape
+
+
+// Smartphone -- Portrait
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+  // Grid Container
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+  
+    .logo img {
+      display: none;
+    }
+  
+    ul {
+      margin: 0;
+    }
+  
+      li a {
+        margin-left: 0rem;
+      }
+    }
+
+  // About
+  .body-about {
+    overflow: scroll;
+    height: 100%;
+  }
+
+  #welcome {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  #about-content {
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+
+    .about-personal {
+      flex-direction: column;
+    }
+
+    .vertical-line {
+      display: none;
+    }
+
+    .email {
+      margin-bottom: 2rem;
+    }
+
+    .about-text {
+      // Disable linebreaks with class="disable-mobile" to create
+      // mobile-friendly paragraphs
+      .disable-mobile {
+        display: none;
+      }
+    }
+  }
+
+  // Projects
+  #project-content {
+    h1 {
+      font-size: 2.25rem
+    }
+
+    p {
+      max-width: 90%;
+      text-align: center;
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+    }
+
+    img {
+      width: 90vw;
+    }
+  }
+
+  // Contact
+  .body-contact {
+    #contact-content {
+      margin-top: 1rem;
+      overflow: hidden;
+      .form {
+        form {
+          width: 250px;
+          margin: auto;
+        }
+
+        h2 {
+          font-size: 3rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Smartphone -- Landscape

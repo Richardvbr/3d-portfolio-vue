@@ -290,4 +290,66 @@ body,
   position: relative;
   padding-bottom: 2.5rem;
 }
+
+// Tablet -- Portrait
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  // Grid Container
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+  
+    .logo img {
+      display: none;
+    }
+  
+    ul {
+      margin: 0;
+    }
+  
+      li a {
+        margin-left: 0rem;
+    }
+  }
+}
+
+// Smartphone -- Portrait
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+  // Grid Container
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+  // Navbar
+  #navbar {
+    justify-content: center;
+    padding-top: 1rem;
+  
+    .logo img {
+      display: none;
+    }
+  
+    ul {
+      margin: 0;
+    }
+  
+      li a {
+        margin-left: 0rem;
+      }
+    }
+
+  #welcome {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
 </style>
