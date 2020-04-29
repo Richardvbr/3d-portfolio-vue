@@ -39,14 +39,15 @@
             v-for="(project,portfolioLoop) in portfolioJSON"
             :key="portfolioLoop"
           >
-            <a :href="project.link">
+            <!-- Dynamically generate route -->
+            <router-link :to="{path:project.routeName}">
               <img :src="project.imgSource" :alt="project.imgAlt" />
               <div class="grid-overlay">
                 <div class="item-text">
                   <p>{{ project.projectName }}</p>
                 </div>
               </div>
-            </a>
+            </router-link>
           </div>
         </div>
       </section>
@@ -61,56 +62,55 @@ export default {
     return {
       portfolioJSON: [
         {
-          link: "https://richardvbr-3d.netlify.app/projects/nomansland.html",
+          routeName: "/projects/nomansland",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-no-mans-land-01.jpg"),
           imgAlt: "No Man's Land",
           projectName: "No Man's Land - VR"
         },
         {
-          link: "https://richardvbr-3d.netlify.app/projects/mark1tank.html",
+          routeName: "/projects/mark1tank",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-mark1tank-01.jpg"),
           imgAlt: "Mark 1 Tank",
           projectName: "Mark 1 Tank - WW1"
         },
         {
-          link: "https://richardvbr-3d.netlify.app/projects/nieuport11.html",
+          routeName: "/projects/nieuport11",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-nieuport11-01.jpg"),
           imgAlt: "Nieuport 11",
           projectName: "Nieuport 11 - WW1"
         },
         {
-          link: "https://richardvbr-3d.netlify.app/projects/lantern.html",
+          routeName: "/projects/lantern",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-lantern-01.jpg"),
           imgAlt: "Lantern",
           projectName: "Lantern - WW1"
         },
         {
-          link: "https://richardvbr-3d.netlify.app/projects/at4cs.html",
+          routeName: "/projects/at4cs",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-at4-01.jpg"),
           imgAlt: "AT4-CS",
           projectName: "AT4-CS"
         },
         {
-          link: "https://richardvbr-3d.netlify.app/projects/gloves.html",
+          routeName: "/projects/gloves",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-glove-01.jpg"),
           imgAlt: "Gloves",
           projectName: "Gloves - WW1"
         },
         {
-          link:
-            "https://richardvbr-3d.netlify.app/projects/stielhandgranate.html",
+          routeName: "/projects/stielhandgranate",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-stielhandgranate-01.jpg"),
           imgAlt: "Stielhandgranate",
           projectName: "Stielhandgranate WW1"
         },
         {
-          link: "https://richardvbr-3d.netlify.app/projects/detonator.html",
+          routeName: "/projects/detonator",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-detonator-01.jpg"),
           imgAlt: "C4 Detonator",
           projectName: "C4 Detonator"
         },
         {
-          link: "https://richardvbr-3d.netlify.app/projects/explosive.html",
+          routeName: "/projects/explosive",
           imgSource: require("../../public/img/grid-container/richard-van-brunschot-explosive-01.jpg"),
           imgAlt: "C4 Explosive",
           projectName: "C4 Explosive"
@@ -254,16 +254,6 @@ body,
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   margin: 0rem 6.25rem;
-  animation: fadein 1s ease-in-out;
-
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
   .grid-item {
     position: relative;

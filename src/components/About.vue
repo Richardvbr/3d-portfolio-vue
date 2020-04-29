@@ -103,7 +103,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 // Variables
 $primary-color: #3cbc8d;
@@ -113,28 +112,6 @@ $text-color: #fff;
 $text-color-grey: rgb(122, 122, 122);
 $label-color: rgb(145, 145, 145);
 $font: "Roboto", sans-serif;
-
-// Global reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  a {
-    color: $text-color;
-  }
-
-  a:visited {
-    color: $text-color;
-  }
-
-  font-family: $font;
-}
-
-// Overall background color
-html {
-  background-color: $background-color;
-}
 
 // Main body
 body,
@@ -232,23 +209,7 @@ body,
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: slide-from-top 1s ease-in-out;
     line-height: 1.25;
-  }
-
-  @keyframes slide-from-top {
-    0% {
-      transform: translateY(-1000px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 
   img {
@@ -298,23 +259,7 @@ body,
   }
 
   .about-text {
-    animation: slide-from-bottom 1s ease-in-out;
     line-height: 1.25;
-  }
-
-  @keyframes slide-from-bottom {
-    0% {
-      transform: translateY(1000px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 
   h3 {

@@ -11,6 +11,11 @@ const router = new Router({
   routes
 })
 
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
+})
+
 // Initialize and inject vue app
 new Vue({
   router,

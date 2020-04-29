@@ -19,28 +19,6 @@ $text-color-grey: rgb(122, 122, 122);
 $text-color: #fff;
 $font: "Roboto", sans-serif;
 
-// Global reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  a {
-    color: $text-color;
-  }
-
-  a:visited {
-    color: $text-color;
-  }
-
-  font-family: $font;
-}
-
-// Overall background color
-html {
-  background-color: $background-color;
-}
-
 // Footer
 #footer {
   margin: 0 0 1.5rem 0;

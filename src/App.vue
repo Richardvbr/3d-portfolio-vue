@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <transition name="page-transition-fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
     <Footer />
   </div>
 </template>
@@ -15,7 +17,24 @@ export default {
 };
 </script>
 
+
 <style lang="scss">
+// Vue page transitions
+.page-transition-fade-enter-active,
+.page-transition-fade-leave-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease;
+}
+
+.page-transition-fade-enter,
+.page-transition-fade-leave-to {
+  opacity: 0;
+}
+
+.page-transition-fade-enter-to,
+.page-transition-fade-leave {
+  opacity: 1;
+}
+
 $background-color: #26262b;
 $primary-color: #3cbc8d;
 $primary-color-hover: rgb(51, 158, 119);

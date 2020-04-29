@@ -67,28 +67,6 @@ $text-color-grey: rgb(122, 122, 122);
 $label-color: rgb(145, 145, 145);
 $font: "Roboto", sans-serif;
 
-// Global reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  a {
-    color: $text-color;
-  }
-
-  a:visited {
-    color: $text-color;
-  }
-
-  font-family: $font;
-}
-
-// Overall background color
-html {
-  background-color: $background-color;
-}
-
 // Main body
 body,
 .body-contact {
@@ -179,16 +157,6 @@ body,
   align-items: center;
   justify-content: center;
   height: 100vh;
-  animation: fade-in 0.75s ease-in-out;
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
   .form {
     margin-top: 100px;
