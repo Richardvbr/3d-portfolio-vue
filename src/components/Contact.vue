@@ -156,11 +156,21 @@ body,
 
     :nth-child(2) {
       font-size: 1.25rem;
-      margin-bottom: 0.25rem
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: $primary-color;
+      transition: 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: $primary-color-hover;
     }
 
     h2 {
       color: #fff;
+      color: $primary-color;
       margin-bottom: 4rem;
       font-size: 3.5rem;
     }

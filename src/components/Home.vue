@@ -34,12 +34,13 @@
 
       <section id="home-content">
         <div class="grid-container">
+          <!-- Loop over portfolioJSON object, creating a CSS grid element for each entry containing the correct vue-router link, image, overlay and project name -->
           <div
             class="grid-item"
             v-for="(project,portfolioLoop) in portfolioJSON"
             :key="portfolioLoop"
           >
-            <!-- Dynamically generate route -->
+            <!-- Dynamically generate vue-route based on portfolioJSON object -->
             <router-link :to="{path:project.routeName}">
               <img :src="project.imgSource" :alt="project.imgAlt" />
               <div class="grid-overlay">
@@ -60,6 +61,7 @@
 export default {
   data: function() {
     return {
+      // JSON object containing all required vue-routes, image sources, image alts and project names
       portfolioJSON: [
         {
           routeName: "/projects/nomansland",
@@ -302,17 +304,17 @@ body,
   #navbar {
     justify-content: center;
     padding-top: 1rem;
-  
+
     .logo img {
       display: none;
     }
-  
+
     ul {
       margin: 0;
     }
-  
-      li a {
-        margin-left: 0rem;
+
+    li a {
+      margin-left: 0rem;
     }
   }
 }
@@ -328,19 +330,19 @@ body,
   #navbar {
     justify-content: center;
     padding-top: 1rem;
-  
+
     .logo img {
       display: none;
     }
-  
+
     ul {
       margin: 0;
     }
-  
-      li a {
-        margin-left: 0rem;
-      }
+
+    li a {
+      margin-left: 0rem;
     }
+  }
 
   #welcome {
     h1 {

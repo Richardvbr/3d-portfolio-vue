@@ -11,6 +11,7 @@ const router = new Router({
   routes
 })
 
+// Change meta title depending on active vue-route
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title
   next()

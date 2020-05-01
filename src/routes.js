@@ -1,3 +1,4 @@
+// Import all required components
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -11,6 +12,7 @@ import Stielhandgranate from './components/Stielhandgranate'
 import Detonator from './components/Detonator'
 import Explosive from './components/Explosive'
 
+// Export an array containing all required paths and corresponding components and meta tags
 export const routes = [
   { path: '/index', component: Home, meta: { title: "3D Modeling Portfolio | Richard van Brunschot" } },
   { path: '', component: Home, meta: { title: "3D Modeling Portfolio | Richard van Brunschot" } },
