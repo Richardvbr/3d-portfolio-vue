@@ -25,21 +25,10 @@
       <section id="contact-content">
         <div class="form">
           <h2>Let's connect</h2>
-          <form name="contact" method="POST" data-netlify="true" action="/form-submit/success.html">
-            <div class="textbox">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="form-name" required />
-            </div>
-            <div class="textbox">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="form-email" required />
-            </div>
-            <div class="message-box">
-              <label for="message">Message</label>
-              <textarea name="message" id="form-message" cols="35" rows="7" required></textarea>
-            </div>
-            <button type="submit" class="button-send">Send</button>
-          </form>
+          <p>Feel free to send me an email at</p>
+          <p>
+            <a href="mailto:richardvanbrunschot@gmail.com">Richardvanbrunschot@gmail.com</a>
+          </p>
         </div>
       </section>
     </main>
@@ -157,73 +146,23 @@ body,
   align-items: center;
   justify-content: center;
   height: 100vh;
+  padding-bottom: 7.5rem;
 
   .form {
     margin-top: 100px;
     width: 500px;
     padding-bottom: 16rem;
+    text-align: center;
 
-    label {
-      color: $label-color;
-      font-size: 0.9rem;
-      margin-bottom: 0.25rem;
+    :nth-child(2) {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem
     }
 
     h2 {
       color: #fff;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       font-size: 3.5rem;
-      text-align: center;
-    }
-
-    .textbox input {
-      background: none;
-      border: 0.5px $primary-color solid;
-      border-radius: 3px;
-      width: 100%;
-      height: 3rem;
-      color: $text-color;
-      margin-bottom: 0.75rem;
-      margin-top: 0.2rem;
-      font-size: 1rem;
-      padding-left: 0.5rem;
-    }
-
-    input:focus,
-    textarea:focus {
-      outline: 1px solid rgb(62, 226, 166);
-      border-color: $primary-color;
-    }
-
-    textarea {
-      background: none;
-      resize: none;
-      width: 100%;
-      border-radius: 3px;
-      border: 0.5px $primary-color solid;
-      font-family: $font;
-      font-size: 1rem;
-      padding-left: 0.5rem;
-      padding-top: 0.4rem;
-      margin-top: 0.2rem;
-      color: $text-color;
-    }
-
-    .button-send {
-      width: 100%;
-      color: $text-color;
-      background: $primary-color;
-      border: none;
-      border-radius: 3px;
-      padding: 1rem;
-      margin-top: 0.5rem;
-      cursor: pointer;
-      font-size: 1rem;
-
-      &:hover {
-        background: $primary-color-hover;
-        transition-duration: 0.25s;
-      }
     }
   }
 }

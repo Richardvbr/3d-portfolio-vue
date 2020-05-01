@@ -1,7 +1,6 @@
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-import MessageSent from './components/MessageSent'
 import NoMansLand from './components/NoMansLand'
 import Mark1Tank from './components/Mark1Tank'
 import Nieuport11 from './components/Nieuport11'
@@ -17,7 +16,6 @@ export const routes = [
   { path: '', component: Home, meta: { title: "3D Modeling Portfolio | Richard van Brunschot" } },
   { path: '/about', component: About, meta: { title: "About | Richard van Brunschot" } },
   { path: '/contact', component: Contact, meta: { title: "Contact | Richard van Brunschot" } },
-  { path: '/form-submit/success.html', component: MessageSent, meta: { title: "Message Sent | Richard van Brunschot" } },
   { path: '/projects/nomansland', component: NoMansLand, meta: { title: "No Man's Land | Richard van Brunschot" } },
   { path: '/projects/mark1tank', component: Mark1Tank, meta: { title: "Mark 1 Tank | Richard van Brunschot" } },
   { path: '/projects/nieuport11', component: Nieuport11, meta: { title: "Nieuport 11 | Richard van Brunschot" } },
