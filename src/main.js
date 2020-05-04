@@ -8,7 +8,9 @@ Vue.use(Router);
 
 // Setup router
 const router = new Router({
-  routes
+  routes,
+  base: '/',
+  mode: 'history'
 })
 
 // Change meta title depending on active vue-route

@@ -14,6 +14,7 @@ import Explosive from './components/Explosive'
 
 // Export an array containing all required paths and corresponding components and meta tags
 export const routes = [
+  { path: '/', component: Home, meta: { title: "3D Modeling Portfolio | Richard van Brunschot" } },
   { path: '/index', component: Home, meta: { title: "3D Modeling Portfolio | Richard van Brunschot" } },
   { path: '', component: Home, meta: { title: "3D Modeling Portfolio | Richard van Brunschot" } },
   { path: '/about', component: About, meta: { title: "About | Richard van Brunschot" } },
