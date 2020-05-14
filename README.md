@@ -1,24 +1,8 @@
-# 3d-portfolio-vue
+## 3D Modeling Portfolio
 
-## Project setup
-```
-npm install
-```
+### Description
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Portfolio website to showcase 3D models. Vue.js single-page application to provide a performant and modern experience. New portfolio items are added to the grid automatically using JSON and for loops.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Tools
+Vue.js, Vue Router, HTML5, SCSS
