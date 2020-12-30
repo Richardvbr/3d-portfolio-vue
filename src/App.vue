@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Navbar />
     <transition name="page-transition-fade" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -9,10 +10,12 @@
 
 <script>
 import Footer from "./components/Footer.vue";
+import Navbar from "./components/Navbar.vue";
 export default {
   name: "App",
   components: {
-    Footer
+    Footer,
+    Navbar
   }
 };
 </script>

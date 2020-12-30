@@ -2,6 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import Router from 'vue-router'
 import { routes } from './routes'
+import VueImg from 'v-img';
+require('./assets/projects.scss');
+
+Vue.use(VueImg);
 
 Vue.config.productionTip = false
 Vue.use(Router);

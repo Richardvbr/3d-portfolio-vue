@@ -2,25 +2,6 @@
 <body class="body-about">
   <section id="about-container">
     <div class="image-bg"></div>
-    <nav id="navbar">
-      <div class="logo">
-        <router-link to="/">
-          <img src="/img/logo-v1.png" alt="Home" />
-        </router-link>
-      </div>
-      <ul>
-        <li>
-          <router-link to="/">Home</router-link>
-        </li>
-        <li>
-          <router-link to="/about" class="active">About</router-link>
-        </li>
-        <li>
-          <router-link to="/contact">Contact</router-link>
-        </li>
-      </ul>
-    </nav>
-
     <main>
       <section id="about-content">
         <div class="about-personal">
@@ -119,74 +100,12 @@ body,
   font-family: "Roboto", sans-serif;
   background-color: $background-color;
   color: $text-color;
-  overflow-x: hidden;
+  overflow-y: hidden;
 
   #main-container {
     margin: auto;
     max-width: 100vw;
     position: relative;
-  }
-}
-
-// Navbar
-#navbar {
-  z-index: 1;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 3rem;
-  padding-top: 1.5rem;
-
-  .logo img {
-    max-width: 35px;
-    margin: 3px 0 0 6.25rem;
-    z-index: 1;
-    position: relative;
-    transition: transform 0.25s;
-
-    &:hover {
-      transform: scale(1.15);
-    }
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin-right: 5.5rem;
-    z-index: 2;
-  }
-
-  li a {
-    color: $text-color;
-    text-decoration: none;
-    padding: 0.5rem 0.75rem;
-    margin-left: 1rem;
-    font-size: 1.05rem;
-    transition: border-bottom 0.2s ease-in-out;
-    height: 1rem;
-    position: relative;
-  }
-
-  li a.active {
-    color: $primary-color;
-  }
-
-  li a:after {
-    content: "";
-    position: absolute;
-    background-color: $primary-color;
-    height: 3px;
-    width: 0%;
-    transform: translateX(-50%);
-    left: 50%;
-    bottom: 0;
-    transition: 0.35s ease;
-  }
-
-  li a:hover:after {
-    width: 50%;
   }
 }
 
@@ -280,27 +199,9 @@ body,
 
 // Tablet -- Portrait
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  // Navbar
-  #navbar {
-    justify-content: center;
-    padding-top: 1rem;
-
-    .logo img {
-      display: none;
-    }
-
-    ul {
-      margin: 0;
-    }
-
-    li a {
-      margin-left: 0rem;
-    }
-  }
 
   // About
   .body-about {
-    overflow: scroll;
     min-height: 100%;
   }
 
@@ -340,27 +241,8 @@ body,
 
 // Smartphone -- Portrait
 @media only screen and (min-width: 250px) and (max-width: 767px) {
-  // Navbar
-  #navbar {
-    justify-content: center;
-    padding-top: 1rem;
-
-    .logo img {
-      display: none;
-    }
-
-    ul {
-      margin: 0;
-    }
-
-    li a {
-      margin-left: 0rem;
-    }
-  }
-
   // About
   .body-about {
-    overflow: scroll;
     height: 100%;
   }
 
